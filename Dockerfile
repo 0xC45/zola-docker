@@ -12,7 +12,7 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup.sh && \
     ./rustup.sh -y
 RUN git clone https://github.com/getzola/zola.git
 WORKDIR /zola
-RUN git checkout v0.11.0 && \
+RUN git checkout v0.12.2 && \
     /root/.cargo/bin/cargo build --release
 
 FROM ubuntu:20.04

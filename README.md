@@ -6,7 +6,7 @@ This is a Docker image that contains the Zola binary ([https://www.getzola.org/]
 
 1. Build docker image
     ```bash
-    docker build -t zola:v0.11.0 .
+    docker build -t zola:v0.12.2 .
     ```
 1. Build site
     ```bash
@@ -17,7 +17,7 @@ This is a Docker image that contains the Zola binary ([https://www.getzola.org/]
       -it \
       -u $(id -u ${USER}):$(id -g ${USER}) \
       -v "${PROJECT_ROOT}:/site" \
-      zola:v0.11.0 \
+      zola:v0.12.2 \
       bash -c 'cd /site && zola build -o docs'
     ```
 1. Serve site (for local development)
@@ -30,6 +30,6 @@ This is a Docker image that contains the Zola binary ([https://www.getzola.org/]
       -u $(id -u ${USER}):$(id -g ${USER}) \
       -v "${PROJECT_ROOT}:/site" \
       -p 127.0.0.1:1111:1111 \
-      zola:v0.11.0 \
+      zola:v0.12.2 \
       bash -c 'cd /site && zola serve -i 0.0.0.0'
     ```
