@@ -1,3 +1,9 @@
+# ⚠️ Archived ⚠️
+
+Warning: This repo is no longer maintained.
+
+---
+
 # zola-docker
 
 This is a Docker image that contains the Zola binary ([https://www.getzola.org/](https://www.getzola.org/)). It can be used for development and/or CI/CD workflows.
